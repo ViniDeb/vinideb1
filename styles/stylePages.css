@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+/* Reset básico */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%; 
+    position: fixed;
+    z-index: 1000;
+}
+
+header .logo {
+    border-radius: 10px;
+    height: 4em; 
+    margin-right: 15px; 
+}
+
+.carousel-inner img {
+    width: auto; /* Mantém a largura proporcional */
+    height: auto; /* Mantém a altura proporcional */
+    max-width: 100%; /* Limita a largura máxima ao container */
+    max-height: 900px; /* Define a altura máxima desejada */
+    margin: auto; /* Centraliza as imagens dentro do container */
+    object-fit: cover; /* Garante que a imagem preencha sem distorção */
+}
+
+.navbar {
+    border: 2px solid #343a40; 
+    border-radius: 5px; 
+    background-color: #e9ecef; 
+    padding: 10px 20px;
+}
+
+.navbar-toggler {
+    border-color: #343a40; /* Cor da borda do botão */
+}
+
+.nav-link.active, 
+.nav-link:hover {
+    color: #6b7075; /* Azul escuro */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Dropdown personalizado */
+.dropdown-menu {
+    border: 1px solid #343a40; /* Borda do dropdown */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo do carrossel */
+.carousel-inner img {
+    width: 100%; /* Ocupa toda a largura */
+    height: 100%; /* Mantém proporção */
+    top: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+}
+
+.carousel-control-prev {
+    left: 0; /* Botão da esquerda encostado */
+}
+
+.carousel-control-next {
+    right: 0; /* Botão da direita encostado */
+}
+
+/* Estilo da estrutura geral */
+body, html {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+}
+
+.container {
+    padding: 0; /* Remove o espaçamento do container */
+    max-width: 100%; /* Garante que ocupe toda a largura */
+}
+
+.container.mt-5 {
+    right: 0;
+    left: 0;
+}
+
+/* Estilo do artigo */
+article {
+    padding-top: 70px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+article div {
+    background-color: rgba(226, 225, 225, 0.192);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.Work a {
+}
+
+article h1 {
+    font-size: 25px;
+}
+
+article div ul li {
+    list-style: circle; /* Marca de lista */
+    padding: 10px;
+}
+
+article div ul li a {
+    text-decoration: none; /* Links sem sublinhado */
+}
+
+/* Redes sociais e rodapé */
+#redesSociais {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#redesSociais ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#redesSociais ul li {
+    list-style: none;
+}
+
+#redesSociais a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+#redesSociais a:hover img {
+    transform: scale(1.1); /* Efeito de zoom */
+}
+
+aside {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+aside nav {
+    align-items: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+aside p {
+    align-items: center;
+}
+
+footer {
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+}
+
+
+/* Ajuste para telas menores */
+@media (max-width: 1200px) {
+    article {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo {
+        height: 3em; /* Reduz o tamanho da logo */
+    }
+
+    .navbar {
+        padding: 5px 10px; /* Ajusta o espaço na barra de navegação */
+    }
+
+    article {
+        padding: 20px; /* Remove espaços laterais extras */
+    }
+
+    article h1 {
+        font-size: 22px; /* Ajusta o tamanho do texto */
+    }
+
+    article div ul li {
+        padding: 5px; /* Reduz o espaçamento entre itens */
+    }
+
+    #redesSociais ul {
+        flex-direction: row; /* Redes sociais em coluna */
+        align-items: center;
+    }
+
+    #redesSociais ul li {
+        margin-bottom: 10px; /* Espaçamento entre ícones */
+    }
+}
+
+table {
+    width: 60%; /* Ajuste a largura da tabela para 60% da largura da página */
+    margin: 20px auto; /* Centraliza a tabela na página */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+@media (max-width: 576px) {
+    header .logo {
+        height: 2.5em; /* Reduz ainda mais a logo */
+    }
+
+    article h1 {
+        font-size: 18px; /* Texto menor */
+    }
+
+    article div ul li {
+        font-size: 14px; /* Reduz o tamanho do texto da lista */
+    }
+
+    .carousel-inner img {
+        max-height: 300px; /* Reduz a altura máxima das imagens do carrossel */
+    }
+
+    aside {
+        padding: 10px; /* Reduz o padding no rodapé */
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.T.E</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/stylePages.css">
+    <link rel="shortcut icon" href="favicon/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border border-dark">
+            <div class="container-fluid">
+                <img src="img/logo.png" alt="Logo" class="logo">    
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Consultoria</a></li>
+                                <li><a class="dropdown-item" href="pages/error404.html">Suporte</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="pages/servicos.html">Mais Serviços</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#navQuemSomos">Quem Somos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Carrossel -->
+    <div class="container p-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Corousel/Lab1.jpg" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Corousel/lab2.jpg" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Corousel/lab3.jpeg" class="d-block w-100" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Artigo com Objetivo, Visão e Valores -->
+    <article>
+        <div>
+            <h1><strong>Nosso Objetivo</strong></h1>
+            <p>Nosso objetivo é transformar o ambiente educacional com tecnologia, oferecendo infraestrutura e soluções inovadoras que ajudam as instituições a se concentrarem no ensino e aprendizado.</p>
+        
+            <h1><strong>Nossa Visão</strong></h1>
+            <p>Ser a referência em tecnologia para redes de ensino, com soluções personalizadas e de alta qualidade, sempre focados na satisfação do cliente.</p>
+        
+            <h1><strong>Nossos Valores</strong></h1>
+            <ul>
+                <li><strong>Inovação:</strong> Manter-se à frente nas tendências tecnológicas.</li>
+                <li><strong>Qualidade:</strong> Adesão a normas internacionais, como a ISO 9001.</li>
+                <li><strong>Acessibilidade:</strong> Oferecer serviços de qualidade a preços acessíveis.</li>
+                <li><strong>Comprometimento:</strong> Foco em resultados e excelência.</li>
+                <li><strong>Flexibilidade:</strong> Suporte a múltiplos sistemas operacionais.</li>
+            </ul>
+        </div>
+    </article>    
+
+    <!-- Redes sociais e footer -->
+    <aside>
+        <nav aria-label="Redes sociais" id="redesSociais">
+            <p>Redes Sociais</p>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="img/logo_Instagram.png" alt="Instagram"></a></li>
+                <li><a href="#" target="_blank"><img src="img/logo_Whatsaap.png" alt="WhatsApp"></a></li>
+                <li><a href="#" target="_blank"><img src="img/logo_Facebook.png" alt="Facebook" id="Facebook"></a></li>
+            </ul>
+        </nav>
+        &copy; 2024 por Infinity Technology New Era
+    </aside>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
